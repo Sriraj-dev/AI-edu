@@ -1,0 +1,19 @@
+
+
+Lets generalise the techniques we would be using during the data preprocessing and training the
+model.
+
+* Understand the target of the problem clearly and keep this in mind while building 
+train/dev/test sets.
+
+1. Drop the rows in which we dont have output value(output value is NaN)
+- Split the data into training & validation sets
+- (Be careful while splitting the data keeping in mind the data distribution &
+ target objective of the model bcuz dev & test sets must include examples which will test our 
+ objective.)
+2. Handle the missing data by dropping columns or Imputing.
+3. Understand numerical and categorical varaibles.
+4. Handle categorical varaiables by One-HotEncoding or OrdinalEncoding
+(Check the possible categories in training / validation sets properly before encoding)
+5. 
+

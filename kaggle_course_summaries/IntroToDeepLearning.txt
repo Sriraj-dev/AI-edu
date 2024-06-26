@@ -1,0 +1,56 @@
+
+Introduction to single neuron
+
+Creating the single neuron using tensorflow-sequential
+
+Multiple neurons connected with layers.
+
+Learning rate, stochastic gradient descent, batch_sizes, epochs, adam optimizer
+
+Learning curves by plotting history from model.fit()
+    training_loss keeps decreasing but validation loss decreases upto a instant and then starts 
+    increasing as the model starts to learn noise in the training set i.e. overfitting model.
+
+Overfitting & Underfitting
+    - Increase the NN complexity in Underfitting
+    - Use EarlyStopping() if it is overfitting with greater epochs
+    - Underfitting :
+        - Increase the features or complexity of NN
+        - decrese the regularization parameters
+    - Overfitting : 
+        - Increase the training data
+        - increasing the regularization parameter.
+        - Adding Dropout / BatchNormalization layers in between
+        - decreasing the features / complexity
+        - EarlyStopping() callback
+
+Layers other than Dense
+    - Dropout layer : helps a lot in preventing overfitting by dropping out random connections
+     in training
+    - Batch normalization layer, helps in coordinative rescaling of the parameters even between
+    layers.
+
+    
+We can try moving to computervision or sentiment analysis
+
+Classify images with TPUs in  - Petals to the Metal
+Create art with GANs in - I'm Something of a Painter Myself
+Classify Tweets in Real or Not? - NLP with Disaster Tweets
+Detect contradiction and entailment in - Contradictory, My Dear Watson
+
+
+
+
+Doubts:
+X['arrival_date_month'] = \
+    X['arrival_date_month'].map(
+        {'January':1, 'February': 2, 'March':3,
+         'April':4, 'May':5, 'June':6, 'July':7,
+         'August':8, 'September':9, 'October':10,
+         'November':11, 'December':12}
+    )
+
+Why not to use Hot encoding here?
+
+
+

@@ -1,0 +1,43 @@
+
+
+Key terms - 
+- Words as vectors
+- Vector embeddings
+- Vector embedding models - Word2Vec,GloVe, FastText etc.
+- Importance of Context 
+- Prompt -> Tokenizer -> context Window -> LLM Model -> detokenizer -> Output.
+
+
+Recurrent Neural Networks (RNN):
+-  We can deal with problems having different amount of input values.
+- They also have feedback loops
+- Allows to take sequential input values like stock market prices.
+- Those feedback links help us to take in sequential inputs.
+- But we have a vanishing/exploding gradient problem, due to which we use this not so frequently!
+& thats where LSTM comes in!
+
+
+LSTM (Long short term memory):
+- Designed to mitigate the vanishing/exploding gradient problem.
+- Instead of using the same feedback loop , LSTM uses different paths for long & short term memory
+- Uses sigmoid & tanH activation functions
+- Working:
+    - Consider there are 2 memory lines -> long term memory & short term memory.
+    - Different segments of the network decide
+        - % of long term to remember (segment 1)
+        - % of potential memory to add (segment 2)
+        - New short term memory is generated -> Potential short term memory to be remembered (segment 3)
+    - New short term memory is the output of the LSTM and known as output gate
+
+
+
+* Encoder - Decoder mechanism
+
+
+
+Transformers:
+- Able to process or analyse entire sentences/paragraphs simultaneously instead of sequentially.
+- https://iitk-bhu-llm.gitbook.io/coursework/word-vectors-simplified/bonus-section-overview-of-the-transformers-architecture/multi-head-attention-and-transformers-architecture
+
+- 
+
